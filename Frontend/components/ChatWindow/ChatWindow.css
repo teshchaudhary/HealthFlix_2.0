@@ -1,0 +1,12 @@
+/* Initial state of the chat window */
+.chat-window {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation when opening the chat */
+.chat-window.animate-open {
+    opacity: 1;
+    transform: translateY(0);
+}
