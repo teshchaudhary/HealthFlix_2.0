@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .rotate {
-    animation: rotate 30s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate {
@@ -15,3 +15,12 @@
     }
 }
 
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2; /* Standard syntax */
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis (...) */
+  }
+  

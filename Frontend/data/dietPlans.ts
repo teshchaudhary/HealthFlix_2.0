@@ -1,0 +1,17 @@
+export const dietPlans = [
+    { id: 1, title: "Keto Diet", description: "A high-fat, low-carb diet" },
+    { id: 2, title: "Mediterranean Diet", description: "A diet inspired by the eating habits of Greece and Italy" },
+    { id: 3, title: "Paleo Diet", description: "Based on the types of foods presumed to have been eaten by early humans" },
+    { id: 4, title: "Whole30 Diet", description: "A 30-day dietary program aimed at improving health and reducing inflammation" },
+    { id: 5, title: "Intermittent Fasting", description: "An eating pattern that cycles between periods of fasting and eating" },
+    { id: 6, title: "Vegetarian Diet", description: "Excludes meat and sometimes other animal products" },
+    { id: 7, title: "Vegan Diet", description: "Excludes all animal products" },
+    { id: 8, title: "Low-Carb Diet", description: "Limits carbohydrates such as those found in sugary foods, pasta, and bread" },
+    { id: 9, title: "Low-Fat Diet", description: "Restricts fat intake to promote weight loss or improve health" },
+    { id: 10, title: "DASH Diet", description: "Designed to prevent and lower high blood pressure" },
+    { id: 11, title: "Flexitarian Diet", description: "Primarily vegetarian but occasionally eats meat or fish" },
+    { id: 12, title: "Atkins Diet", description: "Focuses on reducing carbs while increasing protein and fat intake" },
+    { id: 13, title: "South Beach Diet", description: "Emphasizes the consumption of 'good' carbs and 'good' fats" },
+    { id: 14, title: "Zone Diet", description: "Balances protein, carbs, and fat in a 30-30-40 ratio" },
+    { id: 15, title: "Raw Food Diet", description: "Consists of mostly or completely raw and unprocessed foods" },
+];

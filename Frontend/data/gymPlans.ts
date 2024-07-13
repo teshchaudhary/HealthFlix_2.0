@@ -1,0 +1,17 @@
+export const gymPlans = [
+    { id: 1, title: "Strength Training", description: "Build muscle and strength" },
+    { id: 2, title: "Cardio Workout", description: "Improve cardiovascular health" },
+    { id: 3, title: "HIIT (High-Intensity Interval Training)", description: "Alternates between short bursts of intense exercise and periods of rest or lower-intensity exercise" },
+    { id: 4, title: "Yoga", description: "Improves flexibility, strength, and balance through a series of poses and breathing exercises" },
+    { id: 5, title: "Pilates", description: "Focuses on core strength, flexibility, and overall body conditioning" },
+    { id: 6, title: "CrossFit", description: "Incorporates elements from high-intensity interval training, Olympic weightlifting, plyometrics, powerlifting, gymnastics, calisthenics, and other exercises" },
+    { id: 7, title: "Circuit Training", description: "Moves participants quickly through a series of exercises targeting different muscle groups with minimal rest" },
+    { id: 8, title: "Swimming", description: "Improves cardiovascular fitness, endurance, and muscle strength" },
+    { id: 9, title: "Running", description: "Increases cardiovascular fitness, burns calories, and improves mental well-being" },
+    { id: 10, title: "Cycling", description: "Enhances cardiovascular fitness, builds muscle, and aids in weight management" },
+    { id: 11, title: "Rowing", description: "Engages the entire body while providing a low-impact cardio workout" },
+    { id: 12, title: "Kickboxing", description: "Combines martial arts techniques with fast-paced cardio" },
+    { id: 13, title: "Zumba", description: "Involves dance and aerobic movements performed to energetic music" },
+    { id: 14, title: "Barre Workout", description: "Focuses on low-impact, high-intensity movements to sculpt muscles" },
+    { id: 15, title: "Bootcamp", description: "Combines strength training and aerobic exercises in a high-intensity format" },
+];

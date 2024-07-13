@@ -1,7 +1,6 @@
-'use client'
+'use client';
 import '../global.css';
 import ServicesCards from '@/components/cards/servicesCards/ServicesCards';
-import { useState } from 'react';
 
 const Services = () => {
   const services = [
@@ -13,40 +12,16 @@ const Services = () => {
     { id: 6, title: "Pilates Sessions", description: "Focus on core strength and overall body conditioning" },
   ];
 
-  const [servicesIndex, setServicesIndex] = useState(0);
-  const windowSize = 3;
-
-  const onNextServices = () => {
-    if (servicesIndex + windowSize < services.length) {
-      setServicesIndex(prevIndex => prevIndex + 1);
-    }
-  };
-
-  const onPrevServices = () => {
-    if (servicesIndex > 0) {
-      setServicesIndex(prevIndex => prevIndex - 1);
-    }
-  };
-
   return (
-    <div className="bg-black opacity-90 min-h-screen flex flex-col items-center justify-center">
-      <div className="text-2xl font-semibold text-gray-300 mb-10">Our Services</div>
-      <div className="flex overflow-hidden pb-4 hide-scroll-bar">
-        <button className="text-white" onClick={onPrevServices} disabled={servicesIndex === 0}>
-          &lt;
-        </button>
-        <div className="flex flex-nowrap">
-          {services.slice(servicesIndex, servicesIndex + windowSize).map(plan => (
-            <div key={plan.id} className="inline-block px-3">
-              <div className="w-162 h-84 overflow-hidden rounded-lg">
-                <ServicesCards title={plan.title} description={plan.description} />
-              </div>
-            </div>
-          ))}
-        </div>
-        <button className={`text-gray-300 focus:outline-none transform hover:scale-110 transition-transform duration-300 ${servicesIndex + windowSize >= services.length ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={onNextServices} disabled={servicesIndex + windowSize >= services.length}>
-          &gt;
-        </button>
+    <div className="bg-black opacity-90 min-h-screen flex flex-col items-center justify-center p-6">
+      <div className='my-[50px]'></div>
+      <h1 className="text-4xl font-bold text-white mb-8 text-center">Our Services</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 ">
+        {services.map(plan => (
+          <div key={plan.id} className="w-full">
+            <ServicesCards title={plan.title} description={plan.description} />
+          </div>
+        ))}
       </div>
     </div>
   );
