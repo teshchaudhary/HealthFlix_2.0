@@ -11,8 +11,10 @@ const Navbar = () => {
 
     useEffect(() => {
         const token = localStorage.getItem("token");
-        setIsLoggedIn(!!token);
-    }, []);
+        if (token) {
+            setIsLoggedIn(true)
+        };
+    }, [router]);
 
     const handleLogout = () => {
         localStorage.removeItem("token");

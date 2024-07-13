@@ -2,6 +2,7 @@
 import '../../global.css';
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Navbar from "@/components/navbar/page";
 
 const Signup = () => {
   const router = useRouter();
@@ -54,6 +55,7 @@ const Signup = () => {
 
   return (
     <div>
+      <Navbar />
       <div className="flex justify-center items-center h-screen bg-black opacity-90">
         <div className="max-w-md w-full p-6 bg-black opacity-90 shadow-lg">
           <h1 className="text-3xl font-semibold mb-6 text-white">Signup</h1>

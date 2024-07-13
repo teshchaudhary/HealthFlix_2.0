@@ -10,6 +10,7 @@ import {
   MDBInput
 }
 from 'mdb-react-ui-kit';
+import Navbar from "@/components/navbar/page";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -73,6 +74,7 @@ const Login = () => {
 
   return (
     <div>
+      <Navbar />
       <div className="flex justify-center items-center h-screen bg-black opacity-90">
         <div className="max-w-md w-full p-6 bg-black opacity-90 text-white rounded-lg shadow-lg">
           <h1 className="text-3xl font-semibold mb-6">Login</h1>

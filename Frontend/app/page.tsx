@@ -7,6 +7,8 @@ import banner from '../images/banner.png';
 import Image from 'next/image';
 import { dietPlans } from '@/data/dietPlans';
 import { gymPlans } from '@/data/gymPlans';
+import Footer from '@/components/footer/Footer';
+import Navbar from "../components/navbar/page";
 
 const Hero = () => {
     const router = useRouter();
@@ -14,10 +16,11 @@ const Hero = () => {
 
     return (
         <section>
+            <Navbar />
             <div className="bg-black opacity-90 min-h-screen flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center py-10 mt-16">
                     <div className="flex items-center">
-                        <span className="text-white text-4xl font-extrabold tracking-widest drop-shadow-lg ml-[200px]">Stay fit, stay bright</span>
+                        <span className="text-white text-4xl font-extrabold tracking-widest drop-shadow-lg ml-[200px]">Stay Fit, Stay Bright</span>
                         <a onClick={() => router.push("/")} className="cursor-pointer transform transition-transform hover:scale-110">
                             <Image className="rotate" src={banner} alt="HealthFlix Logo" width={500} height={350} />
                         </a>
@@ -39,7 +42,7 @@ const Hero = () => {
                     </div>
                     <div className="flex justify-end w-full pr-5 mb-5 mt-[-20px]">
                         <button
-                            className="bg-red-600 text-white transition-transform duration-300 hover:scale-105 hover:bg-white hover:text-red-600 px-4 py-2 rounded-md"
+                            className="bg-red-600 text-white transition-transform duration-300 hover:scale-105 hover:bg-white hover:text-red-600 px-4 py-2 rounded-md mx-[-10px]"
                             onClick={() => router.push('/plans/diet')}
                         >
                             View All
@@ -59,7 +62,7 @@ const Hero = () => {
                     </div>
                     <div className="flex justify-end w-full pr-5 mb-5">
                         <button
-                            className="bg-red-600 text-white transition-transform duration-300 hover:scale-105 hover:bg-white hover:text-red-600 px-4 py-2 rounded-md"
+                            className="bg-red-600 text-white transition-transform duration-300 hover:scale-105 hover:bg-white hover:text-red-600 px-5 py-2 mx-[-10px] rounded-md"
                             onClick={() => router.push('/plans/gym')}
                         >
                             View All
@@ -67,6 +70,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </section>
     );
 };
